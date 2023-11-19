@@ -29,8 +29,10 @@ export async function getSearchResults(searchParams: string): Promise<SearchQuer
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }
-    const data = await res.json();
-    return data.items || [];
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const data: SearchQueryResult[] = await res.json();
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return data || [];
   } catch (error) {
     console.error('Error fetching data:', error);
     return undefined;

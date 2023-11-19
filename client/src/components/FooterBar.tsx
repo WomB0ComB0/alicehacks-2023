@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Article, Footer } from '@/components/semantics/index';
 import { gitHubs } from '@/constants';
 
@@ -12,7 +12,7 @@ const FooterBar = () => {
   const year = new Date().getFullYear();
   return (
     <Footer className={`pt-6`}>
-      <Article attributes={{ id: 'footer-container' }}>
+      <Article attributes={{ id: 'footer-container' }} className={`flex flex-row justify-between px-2`}>
         <p>
           Made with
           <span>
@@ -20,11 +20,12 @@ const FooterBar = () => {
           </span>
           by{` `}
           {gitHub.map((github, index: IndexProps) => (
-            <>
-              <a href={github.link} key={index} target="_blank" rel="noreferrer noopener">
+            <Fragment key={index}>
+              <a href={github.link} target="_blank" rel="noreferrer noopener">
                 {github.name}
+                {` `}
               </a>
-            </>
+            </Fragment>
           ))}
         </p>
         <p>

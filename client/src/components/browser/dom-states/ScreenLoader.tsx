@@ -1,7 +1,7 @@
-import { Section, Picture } from '../../semantics/index';
+import { Section, Picture, Main } from '../../semantics/index';
 
 const ScreenLoader = () => (
-  <>
+  <Main className="flex flex-col items-center justify-center w-full h-screen">
     <Section className="flex items-center justify-center h-screen bg-[rgb(36,36,36)] text-white flex-col w-full">
       <Picture
         className={`
@@ -18,7 +18,7 @@ const ScreenLoader = () => (
         />
       </Picture>
     </Section>
-  </>
+  </Main>
 );
 
 export default ScreenLoader;

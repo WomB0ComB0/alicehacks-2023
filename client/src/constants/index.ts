@@ -1,18 +1,18 @@
 export const gitHubs: GitHubs[] = [
   {
-    name: 'GitHub',
-    url: 'https://github.com/',
+    name: 'Mike,',
+    url: 'https://github.com/WomB0ComB0',
   },
   {
-    name: 'GitHub',
-    url: 'https://github.com/',
+    name: 'Hori,',
+    url: 'https://github.com/horipop',
   },
   {
-    name: 'GitHub',
-    url: 'https://github.com/',
+    name: 'Shulinyi,',
+    url: 'https://github.com/shu1inyi',
   },
   {
-    name: 'GitHub',
-    url: 'https://github.com/',
+    name: 'Zong.',
+    url: 'https://github.com/ZongNgee',
   },
 ];
