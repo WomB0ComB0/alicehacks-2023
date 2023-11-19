@@ -59,7 +59,7 @@
   },
   "overrides": [
     {
-      "files": ["./src/components/ui/**/*"],
+      "files": ["@/components/ui/**/*"],
       "rules": {
         "max-len": "off",
         "no-unused-vars": "off"

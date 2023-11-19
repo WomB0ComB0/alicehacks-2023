@@ -3,7 +3,7 @@
 import React from 'react';
 import { Toaster } from 'react-hot-toast';
 
-function ToasterProvider({}) {
+function ToasterProvider() {
   return <Toaster />;
 }
 
