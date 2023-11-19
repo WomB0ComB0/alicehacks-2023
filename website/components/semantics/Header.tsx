@@ -7,15 +7,9 @@ function Header({ framer, children, className, style, framerProps, attributes, k
   type SectionMotionProps = typeof motion.header extends React.FC<infer P> ? P : never;
   return (
     <>
-      {framer ? (
-        <motion.header {...(framerProps as SectionMotionProps)} className={cn('', className)} style={style} key={key}>
-          {children}
-        </motion.header>
-      ) : (
         <header {...attributes} className={cn('', className)} style={style}>
           {children}
         </header>
-      )}
     </>
   );
 }

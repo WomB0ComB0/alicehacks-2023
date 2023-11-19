@@ -7,15 +7,9 @@ function Main({ framer, children, className, style, framerProps, attributes, key
   type SectionMotionProps = typeof motion.main extends React.FC<infer P> ? P : never;
   return (
     <>
-      {framer ? (
-        <motion.main {...(framerProps as SectionMotionProps)} className={cn('', className)} style={style} key={key}>
-          {children}
-        </motion.main>
-      ) : (
         <main {...attributes} className={cn('', className)} style={style}>
           {children}
         </main>
-      )}
     </>
   );
 }

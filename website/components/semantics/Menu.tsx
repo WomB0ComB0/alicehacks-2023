@@ -7,15 +7,9 @@ function Menu({ framer, children, className, style, framerProps, attributes, key
   type SectionMotionProps = typeof motion.menu extends React.FC<infer P> ? P : never;
   return (
     <>
-      {framer ? (
-        <motion.menu {...(framerProps as SectionMotionProps)} className={cn('', className)} style={style} key={key}>
-          {children}
-        </motion.menu>
-      ) : (
         <menu {...attributes} className={cn('', className)} style={style}>
           {children}
         </menu>
-      )}
     </>
   );
 }

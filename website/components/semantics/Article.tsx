@@ -7,15 +7,9 @@ function Article({ framer, children, className, style, framerProps, attributes, 
   type SectionMotionProps = typeof motion.article extends React.FC<infer P> ? P : never;
   return (
     <>
-      {framer ? (
-        <motion.article {...(framerProps as SectionMotionProps)} className={cn('', className)} style={style} key={key}>
-          {children}
-        </motion.article>
-      ) : (
         <article {...attributes} className={cn('', className)} style={style}>
           {children}
         </article>
-      )}
     </>
   );
 }

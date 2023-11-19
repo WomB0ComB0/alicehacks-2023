@@ -7,18 +7,9 @@ function Section({ framer, children, className, style, framerProps, attributes, 
   type SectionMotionProps = typeof motion.section extends React.FC<infer P> ? P : never;
   return (
     <>
-      {framer ? (
-        <motion.section
-          {...(framerProps as SectionMotionProps)}
-          className={cn('', className)}
-          style={style}
-          key={key}
-        ></motion.section>
-      ) : (
         <section {...attributes} className={cn('', className)} style={style}>
           {children}
         </section>
-      )}
     </>
   );
 }

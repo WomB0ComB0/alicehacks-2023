@@ -7,15 +7,10 @@ function Figure({ framer, children, className, style, framerProps, attributes, k
   type SectionMotionProps = typeof motion.figure extends React.FC<infer P> ? P : never;
   return (
     <>
-      {framer ? (
-        <motion.figure {...(framerProps as SectionMotionProps)} className={cn('', className)} style={style} key={key}>
-          {children}
-        </motion.figure>
-      ) : (
         <figure {...attributes} className={cn('', className)} style={style}>
           {children}
         </figure>
-      )}
+
     </>
   );
 }
