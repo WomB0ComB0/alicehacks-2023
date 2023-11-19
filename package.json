@@ -1,7 +1,7 @@
 {
   "name": "alicehacks-2023",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web extension with a companion website built using Next.js to search up medical terms. The extension is crafted with React, TypeScript, Tailwind CSS, EsLint, Prettier, and Webpack for seamless integration. Explore medical terms effortlessly with this extension, backed by the power of Jest for reliable testing.",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"cd extension && yarn dev\" \"cd website && npm run dev\""

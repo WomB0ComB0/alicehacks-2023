@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import { Success } from './Success';
-
+import { Article } from '@/components/semantics/index';
 function NewsLetter() {
   const [success, setSuccess] = useState(false);
 
