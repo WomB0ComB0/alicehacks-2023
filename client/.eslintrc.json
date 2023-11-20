@@ -33,7 +33,7 @@
     "no-mixed-operators": "off",
     "prefer-const": "error",
     "prettier": "off",
-    "max-len": ["error", { "code": 150 }]
+    "max-len": ["error", { "code": 700 }]
   },
   "env": {
     "browser": true,
